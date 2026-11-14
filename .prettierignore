@@ -3,6 +3,11 @@ node_modules/
 dist/
 .turbo/
 coverage/
+
+# agent tooling, not repo source
+.claude/
+.agents/
+
 pnpm-lock.yaml
 packages/db/types.ts
 packages/db/types.ts.tmp
