@@ -1,0 +1,32 @@
+{
+  "name": "@askwell/web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint app __tests__ next.config.ts vitest.config.mts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@askwell/db": "workspace:*",
+    "@askwell/shared": "workspace:*",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.5",
+    "@testing-library/dom": "10.4.1",
+    "@testing-library/react": "16.3.3",
+    "@types/node": "22.20.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "jsdom": "31.0.1",
+    "tailwindcss": "4.3.5",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  }
+}

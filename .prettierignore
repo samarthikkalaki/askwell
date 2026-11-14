@@ -1,0 +1,8 @@
+node_modules/
+.next/
+dist/
+.turbo/
+coverage/
+pnpm-lock.yaml
+packages/db/types.ts
+packages/db/types.ts.tmp
