@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Design tokens — project.md §13. One set, shared by every page. */
+@theme {
+  --color-ink: #0a0a0a;
+  --color-ink-muted: #6b6b6b;
+  --color-paper: #ffffff;
+  --color-paper-muted: #f4f4f5;
+
+  --radius-glass: 1rem;
+  --blur-glass: 16px;
+  --shadow-glass: 0 1px 0 rgb(255 255 255 / 0.08) inset, 0 8px 32px rgb(0 0 0 / 0.24);
+  --shadow-glass-light: 0 1px 0 rgb(255 255 255 / 0.9) inset, 0 8px 32px rgb(0 0 0 / 0.06);
+}
+
+@layer components {
+  /* Glass panel on a dark surface */
+  .glass-dark {
+    border: 1px solid rgb(255 255 255 / 0.12);
+    background-color: rgb(255 255 255 / 0.05);
+    backdrop-filter: blur(var(--blur-glass));
+    border-radius: var(--radius-glass);
+    box-shadow: var(--shadow-glass);
+  }
+
+  /* Glass panel on a light surface */
+  .glass-light {
+    border: 1px solid rgb(10 10 10 / 0.08);
+    background-color: rgb(255 255 255 / 0.65);
+    backdrop-filter: blur(var(--blur-glass));
+    border-radius: var(--radius-glass);
+    box-shadow: var(--shadow-glass-light);
+  }
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}

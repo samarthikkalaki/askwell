@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# builds
+.next/
+out/
+next-env.d.ts
+dist/
+*.tsbuildinfo
+
+# turbo
+.turbo/
+
+# env — never commit real values
+.env
+.env.*
+!.env.example
+
+# vercel
+.vercel/
+
+# test + coverage
+coverage/
+
+# editors / os
+.DS_Store
+*.log
